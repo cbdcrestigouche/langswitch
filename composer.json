@@ -1,0 +1,28 @@
+{
+	"name": "cbdcrestigouche/langswitch",
+	"description": "Manages language switching in a Laravel application",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Miguel Arseneault",
+			"email": "miguel.arseneault@cbdc.ca"
+		}
+	],
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"CBDCRestigouche\\LangSwitch\\": "src"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"CBDCRestigouche\\LangSwitch\\ServiceProvider"
+			],
+			"aliases": {
+				"LangSwitch": "CBDCRestigouche\\LangSwitch\\Facade"
+			}
+		}
+	}
+}
