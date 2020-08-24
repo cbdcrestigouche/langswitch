@@ -3,7 +3,7 @@
 	"description": "Manages language switching in a Laravel application",
 	"type": "library",
     "license": "MIT",
-    "version": "1.0.1",
+    "version": "1.0.2",
 	"authors": [
 		{
 			"name": "Miguel Arseneault",

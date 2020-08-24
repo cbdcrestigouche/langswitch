@@ -12,6 +12,6 @@ class LangSwitch extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return LangSwitch::class;
+        return \CBDCRestigouche\LangSwitch\LangSwitch::class;
     }
 }
