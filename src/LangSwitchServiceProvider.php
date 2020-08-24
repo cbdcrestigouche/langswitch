@@ -6,12 +6,10 @@ use Illuminate\Support\ServiceProvider;
 
 class LangSwitchServiceProvider extends ServiceProvider
 {
-	private $configPath = __DIR__.'/config/langswitch.php';
-
 	public function register()
 	{
 		// merge the user's config file back into our config
-		$this->mergeConfigFrom($this->configPath, 'langswitch');
+		$this->mergeConfigFrom(__DIR__.'/../config/config.php', 'langswitch');
 
 		// bind our helper class as a singleton
 		$this->app->singleton(LangSwitch::class, function () {
@@ -26,7 +24,7 @@ class LangSwitchServiceProvider extends ServiceProvider
 
 		// publish our config file
 		$this->publishes([
-			$this->configPath => config_path('langswitch.php'),
+			__DIR__.'/../config/config.php' => config_path('langswitch.php'),
 		]);
 	}
 }

@@ -3,7 +3,7 @@
 	"description": "Manages language switching in a Laravel application",
 	"type": "library",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
 	"authors": [
 		{
 			"name": "Miguel Arseneault",
@@ -23,7 +23,7 @@
 				"CBDCRestigouche\\LangSwitch\\LangSwitchServiceProvider"
 			],
 			"aliases": {
-				"LangSwitch": "CBDCRestigouche\\LangSwitch\\Facade"
+				"LangSwitch": "CBDCRestigouche\\LangSwitch\\Facades\\LangSwitch"
 			}
 		}
 	},

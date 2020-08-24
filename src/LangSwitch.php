@@ -6,18 +6,13 @@ use Illuminate\Support\Facades\Cookie;
 
 class LangSwitch
 {
-	public function queueLocaleCookie(string $locale)
+	public function queueLocaleCookie(string $locale): void
 	{
 		Cookie::queue(Cookie::forever(config('langswitch.cookie_name'), $locale));
 	}
 	
-	public function forgetLocaleCookie()
+	public function forgetLocaleCookie(): void
 	{
 		Cookie::queue(Cookie::forget(config('langswitch.cookie_name')));
-	}
-	
-	public function getQueryParam(string $locale)
-	{
-		return [config('langswitch.query_name') => $locale];
 	}
 }
