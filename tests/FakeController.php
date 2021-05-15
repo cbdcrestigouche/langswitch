@@ -1,6 +1,6 @@
 <?php
 
-namespace CBDCRestigouche\LangSwitch\Tests;
+namespace jonathanlafleur\LangSwitch\Tests;
 
 class FakeController
 {
