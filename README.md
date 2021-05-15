@@ -5,7 +5,7 @@ LangSwitch is a Laravel package that manages language switching. It does this by
 To customize how your app determines which locale to use, publish this package's config file, which will then be availble as `config/langswitch.php`, and follow the instructions further below.
 
 ``` cmd
-$ php artisan vendor:publish --provider=CBDCRestigouche\LangSwitch\ServiceProvider
+$ php artisan vendor:publish --provider=jonathanlafleur\LangSwitch\ServiceProvider
 ```
 
 It is recommended that you read Laravel's documentation on localization before you read ahead: https://laravel.com/docs/7.x/localization.
