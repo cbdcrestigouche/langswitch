@@ -1,6 +1,6 @@
 <?php
 
-namespace CBDCRestigouche\LangSwitch\Facades;
+namespace jonathanlafleur\LangSwitch\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -12,6 +12,6 @@ class LangSwitch extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \CBDCRestigouche\LangSwitch\LangSwitch::class;
+        return \jonathanlafleur\LangSwitch\LangSwitch::class;
     }
 }
