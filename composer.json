@@ -12,7 +12,7 @@
 		{
 			"name": "Jonathan Lafleur",
 			"email": "me@jonathanlafleur.ca"
-		},
+		}
 	],
 	"require": {},
 	"autoload": {
