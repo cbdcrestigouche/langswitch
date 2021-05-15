@@ -1,9 +1,9 @@
 <?php
 
-namespace CBDCRestigouche\LangSwitch\Tests\Unit;
+namespace jonathanlafleur\LangSwitch\Tests\Unit;
 
-use CBDCRestigouche\LangSwitch\LangSwitchMiddleware;
-use CBDCRestigouche\LangSwitch\Tests\TestCase;
+use jonathanlafleur\LangSwitch\LangSwitchMiddleware;
+use jonathanlafleur\LangSwitch\Tests\TestCase;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 
@@ -92,7 +92,7 @@ class LangSwitchMiddlewareTest extends TestCase
         // mock config
         Config::set('langswitch.default', 'jp');
         Config::set('langswitch.strategies', [
-            '\CBDCRestigouche\LangSwitch\Tests\FakeController@getLocale'
+            '\jonathanlafleur\LangSwitch\Tests\FakeController@getLocale'
         ]);
 
         // FakeController is bound in our base TestCase via
