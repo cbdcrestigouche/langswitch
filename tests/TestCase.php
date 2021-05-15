@@ -1,8 +1,8 @@
 <?php
 
-namespace CBDCRestigouche\LangSwitch\Tests;
+namespace jonathanlafleur\LangSwitch\Tests;
 
-use CBDCRestigouche\LangSwitch\LangSwitchServiceProvider;
+use jonathanlafleur\LangSwitch\LangSwitchServiceProvider;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
