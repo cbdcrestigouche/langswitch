@@ -1,6 +1,6 @@
 <?php
 
-namespace CBDCRestigouche\LangSwitch;
+namespace jonathanlafleur\LangSwitch;
 
 use Closure;
 use Exception;
